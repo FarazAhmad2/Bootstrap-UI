@@ -1,0 +1,108 @@
+/* Resetting default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling for flexbox section */
+.flex-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Individual flexbox items */
+.flex-box .container {
+    margin-top: 20px;
+    width: 295px;
+    aspect-ratio: 300/200; /* Maintaining aspect ratio */
+    text-align: center;
+    padding: 0;
+}
+
+/* Styling for images within flexbox */
+.flex-box .container img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensuring images cover their containers */
+}
+
+/* Styling for gallery section */
+.gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr), 2fr;
+    grid-gap: 0.55em;
+}
+
+/* Individual grid items in gallery */
+.grid-item-1 {
+    grid-column: 1;
+    grid-row: 1/span 2;
+}
+
+/* Styling for images within gallery */
+.gallery .box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensuring images cover their containers */
+}
+
+/* Individual grid items in gallery */
+.grid-item-2 {
+    display: flex;
+    width: 48.4%;
+    gap: 0 0.55em;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+/* Individual grid items in gallery */
+.grid-item-3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+/* Individual grid items in gallery */
+.grid-item-4 {
+    grid-row: 2;
+}
+
+/* Individual grid items in gallery */
+.grid-item-5 {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+    grid-row: 2;
+    width: 48.4%;
+    gap: 0 0.55em;
+}
+
+/* Individual grid items in gallery */
+.grid-item-6 {
+    grid-row: 3;
+}
+
+/* Individual grid items in gallery */
+.grid-item-7 {
+    grid-column: 2/4;
+}
+
+/* Styling for card images */
+.card-img-top {
+    aspect-ratio: 4/3; /* Maintaining aspect ratio for card images */
+}
+
+/* Transition effect for card buttons */
+.card-body .btn {
+    transition: all 0.8s ease-in-out;
+}
+
+/* Hover effect for card buttons */
+.card-body .btn:hover {
+    background-color: #50a5ff; /* Changing background color on hover */
+}
