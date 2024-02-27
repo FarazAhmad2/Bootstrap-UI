@@ -16,7 +16,7 @@
 /* Individual flexbox items */
 .flex-box .container {
     margin-top: 20px;
-    width: 295px;
+    width: 320px;
     aspect-ratio: 300/200; /* Maintaining aspect ratio */
     text-align: center;
     padding: 0;
